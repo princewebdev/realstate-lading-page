@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.text-end{
+    text-align: end;
+}
+/* root css */
+:root{
+    --primary-color: #203239;
+    --secondary-color: #FF7527;
+    --border-color: #EEEDDE;
+    --bg-color: #EEEDDE;
+    --text-white: #fff;
+    --primary-fonts : "poppins", sans-serif; 
+    --secondary-font-color: rgba(32, 50, 57, 0.55);
+}
+/* global css */
+section{
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.grid{
+    display: grid;
+}
+.col-2{
+    grid-template-columns: 1fr 1fr;
+}
+.col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.col-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+.col-8{
+    grid-template-columns: 2;
+}
+.gap{
+    gap: 20px;
+}
+.align-center{
+    align-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content: end;
+}
+
+
+/* header start */
+header{
+    background-color: var(--bg-color);
+}
+.logo{
+    color: var(--primary-color);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+}
+.logo span{
+    font-size: 24px;
+    font-style: normal;
+}
+.menu li:first-child a{
+    font-weight: 600;
+    color:  var(--secondary-color);
+    border-width: 3px;
+}
+/* banner start */
+.banner{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: var(--bg-color);
+}
+.inner-banner{
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.banner-text h2{
+    font-family: var(--primary-fonts);
+    font-size: 56px;
+    line-height: 65px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.banner-text p{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--secondary-font-color);
+}
+.banner-text form input{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid var(--text-white);
+}
+.banner-text form input:hover, .banner-text form input:focus-visible{
+    border: 1px solid var(--secondary-color);
+    outline: var(--secondary-color);
+}
+.banner-text form button{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--text-white);
+    width: 40%;
+    border: none;
+    color: var(--secondary-font-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+.banner-text form button:hover{
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+/* service start */
+.service{
+    padding: 80px 0px;
+    width: 100%;
+}
+.service .service-head{
+    margin-bottom: 40px;
+}
+.service-head h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.service-row{
+    column-gap: 10rem;
+}
+.service-card{
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+.service-card .border-color{
+    background-color: var(--secondary-color);
+    width: 8px;
+    height: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.service-card .card-head h3{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.service-card .card-head span{
+    align-self: self-end;
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.service-card p{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--secondary-font-color);
+}
+.service-card a{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-top: 30px;
+}
+/* portfolio start */
+.portfolio{
+    padding: 80px 0px 180px;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+.portfolio .portfolio-head{
+    margin-bottom: 40px;
+}
+.portfolio-head span{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.portfolio-head h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.portfolio-img{
+    position: relative;
+}
+.portfolio-img img:last-child{
+    position: absolute;
+    top: 70px;
+    left: 165px;
+}
+.portfolio-content h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.portfolio-content p{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--secondary-font-color);
+}
+.portfolio-content .btn-group{
+    padding-top: 20px;
+}
+.portfolio-content .btn-group a svg{
+    padding-right: 12px;
+}
+.portfolio-content .btn-group a{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 13px 41px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: .5s;
+}
+.portfolio-content .btn-group a:last-child{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+.portfolio-content .btn-group a:first-child:hover{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+.portfolio-content .btn-group a:last-child:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+/* blog start */
+.blog{
+    padding: 80px 0px;
+}
+.blog .blog-head{
+    margin-bottom: 64px;
+}
+.blog-head h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.blog-head span{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.blog .inner-blog .card{
+    display: grid;
+    gap: 15px;
+}
+.inner-blog .card h3{
+    font-family: var(--primary-fonts);
+    font-size: 24px;
+    font-weight: 500;
+}
+.inner-blog .card p{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--primary-color);
+}
+/* contact start */
+.contact{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: var(--bg-color);
+}
+.contact .contact-head{
+    margin-bottom: 64px;
+}
+.contact-head h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.contact-icon .card{
+    grid-template-columns: 10% 90%;
+    background-color: var(--text-white);
+    gap: 30px;
+    border-radius: 10px;
+    padding: 25px 41px;
+}
+.contact-icon .card .call-btn svg{
+    font-size: 34px;
+    color: var(--primary-color);
+
+}
+.contact-icon .card .inner-call span{
+    color: var(--primary-color);
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.contact-icon .card .inner-call a{
+    color: var(--primary-color);
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.contact-icon .card .inner-call a:last-child{
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-white);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    padding: 10px 17px;
+    width: 108px;
+}
+.contact .contact-brand h2{
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+/* footer */
+footer{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: var(--primary-color);
+}
+footer .logo{
+    color: var(--text-white) !important;
+}
+footer .icon-list svg{
+    color: var(--text-white);
+}
